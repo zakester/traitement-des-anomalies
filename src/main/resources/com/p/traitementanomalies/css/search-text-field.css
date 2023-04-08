@@ -1,0 +1,10 @@
+#search-text-field-style {
+    -fx-font-family: 'Inter Regular';
+    -fx-background-color: #f1f1f1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+#search-text-field-style: hover {
+    -fx-background-color: #efefef;
+}

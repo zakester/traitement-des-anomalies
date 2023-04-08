@@ -1,0 +1,9 @@
+#search-button-style {
+    -fx-background-color: #f1f1f1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+#search-button-style: hover {
+    -fx-background-color: #efefef;
+}

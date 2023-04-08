@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<?import com.jfoenix.controls.JFXListView?>
+
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<VBox style="-fx-background-color: white;" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" minWidth="1280" minHeight="720" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.p.traitementanomalies.MainController">
+
+    <padding>
+        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+    </padding>
+
+    <HBox HBox.hgrow="ALWAYS" spacing="20">
+
+        <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        </padding>
+
+        <TextField id="search-text-field-style" stylesheets="@css/search-text-field.css" fx:id="searchTextField" minHeight="35" promptText="Recherche" HBox.hgrow="ALWAYS">
+            <padding>
+                <Insets left="15" right="15" />
+            </padding>
+        </TextField>
+        <Button id="search-button-style" stylesheets="@css/search-button-style.css" fx:id="searchText" onAction="#search" minWidth="35" minHeight="35">
+            <graphic>
+                <FontIcon iconColor="#878787" iconLiteral="gmi-search" iconSize="24" />
+            </graphic>
+        </Button>
+
+    </HBox>
+
+    <Label fx:id="title" text="Tapez votre Anomalie pour Rechercher..." style="-fx-font-size: 25px; -fx-font-family: 'Inter Bold';" />
+
+    <HBox spacing="20" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+
+        <VBox spacing="10" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+            <Label text="Action Corrective:" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+            <JFXListView fx:id="actionCorrectiveListView" stylesheets="@css/listview.css" minWidth="400" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
+        </VBox>
+
+        <VBox spacing="10" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+            <Label text="Action Préventive:" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+            <JFXListView fx:id="actionPreventiveListView" stylesheets="@css/listview.css" minWidth="400" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
+        </VBox>
+
+    </HBox>
+
+</VBox>
