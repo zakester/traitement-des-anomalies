@@ -28,7 +28,7 @@
                 <Insets left="15" right="15" />
             </padding>
         </TextField>
-        <Button id="search-button-style" stylesheets="@css/search-button-style.css" fx:id="searchText" onAction="#search" minWidth="35" minHeight="35">
+        <Button id="search-button-style" stylesheets="@css/button-style.css" fx:id="searchText" onAction="#search" minWidth="35" minHeight="35">
             <graphic>
                 <FontIcon iconColor="#878787" iconLiteral="gmi-search" iconSize="24" />
             </graphic>

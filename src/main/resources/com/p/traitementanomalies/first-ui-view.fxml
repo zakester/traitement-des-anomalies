@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<?import com.jfoenix.controls.JFXButton?>
+
+<ScrollPane style="-fx-background-color: white;" stylesheets="@css/scrollbar.css" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" fitToHeight="true" fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="com.p.traitementanomalies.FirstUiViewController">
+
+    <VBox style="-fx-background-color: white;" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" spacing="20.0">
+        <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+        </padding>
+
+        <HBox spacing="50">
+            <JFXTextField fx:id="nom" promptText="Nom" />
+            <JFXTextField fx:id="prenom" promptText="Prénom" />
+        </HBox>
+
+        <HBox spacing="50">
+            <JFXTextField fx:id="numberAnomalie" promptText="N° de la Anomalie" />
+        </HBox>
+
+        <HBox spacing="50">
+            <JFXDatePicker fx:id="date" promptText="Date de detection" />
+            <JFXTimePicker fx:id="time" promptText="L'Heur de detection" />
+        </HBox>
+
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20" />
+            </padding>
+
+            <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+                <Label text="Département Concerné" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+                <JFXRadioButton text="Magasin">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="department" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Production">
+                    <toggleGroup>
+                        <fx:reference source="department" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Controle Qualité">
+                    <toggleGroup>
+                        <fx:reference source="department" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Assurance Qualité">
+                    <toggleGroup>
+                        <fx:reference source="department" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+            </VBox>
+
+            <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+                <Label text="L'élement impacté" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+                <JFXRadioButton text="Produit">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="elementImpacted"/>
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Systéme">
+                    <toggleGroup>
+                        <fx:reference source="elementImpacted" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Equipment">
+                    <toggleGroup>
+                        <fx:reference source="elementImpacted" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+            </VBox>
+
+        </HBox>
+
+        <JFXTextField fx:id="numberLot" promptText="N° de Lot" />
+        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+
+            <padding>
+                <Insets top="20" bottom="20" left="20" right="20" />
+            </padding>
+
+            <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+                <Label text="Type d'Anomalie" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+                <JFXRadioButton text="Matiere">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="typeAnomaly" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Méthode">
+                    <toggleGroup>
+                        <fx:reference source="typeAnomaly" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Millieu">
+                    <toggleGroup>
+                        <fx:reference source="typeAnomaly" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Main d'oevre">
+                    <toggleGroup>
+                        <fx:reference source="typeAnomaly" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Materiel">
+                    <toggleGroup>
+                        <fx:reference source="typeAnomaly" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+            </VBox>
+
+            <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+                <Label text="Sou-Type" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+                <JFXRadioButton text="Analytique">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="souType"/>
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="In Process">
+                    <toggleGroup>
+                        <fx:reference source="souType" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Produit">
+                    <toggleGroup>
+                        <fx:reference source="souType" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Validation">
+                    <toggleGroup>
+                        <fx:reference source="souType" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Stabilité">
+                    <toggleGroup>
+                        <fx:reference source="souType" />
+                    </toggleGroup>
+                </JFXRadioButton>
+            </VBox>
+
+            <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+                <Label text="Service Concerné" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+                <JFXRadioButton text="Pessée">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="sc"/>
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Granulation">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Melange">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Compression">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Pellicalage">
+                    <toggleGroup>
+                        <fx:reference source="souType" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Remplissage">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Conditionnment 1">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+
+                <JFXRadioButton text="Conditionnement 2">
+                    <toggleGroup>
+                        <fx:reference source="sc" />
+                    </toggleGroup>
+                </JFXRadioButton>
+            </VBox>
+
+        </HBox>
+
+        <VBox spacing="20" HBox.hgrow="ALWAYS">
+
+            <Label text="Niveau de Gravité" style="-fx-font-size: 20px; -fx-font-family: 'Inter Bold';" />
+
+            <JFXRadioButton text="Mineure">
+                <toggleGroup>
+                    <ToggleGroup fx:id="ng"/>
+                </toggleGroup>
+            </JFXRadioButton>
+
+            <JFXRadioButton text="Modérée">
+                <toggleGroup>
+                    <fx:reference source="ng" />
+                </toggleGroup>
+            </JFXRadioButton>
+
+            <JFXRadioButton text="Mazeure">
+                <toggleGroup>
+                    <fx:reference source="ng" />
+                </toggleGroup>
+            </JFXRadioButton>
+
+            <JFXRadioButton text="Sevére">
+                <toggleGroup>
+                    <fx:reference source="ng" />
+                </toggleGroup>
+            </JFXRadioButton>
+        </VBox>
+
+        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+            <JFXButton onAction="#next" text="Suivant" stylesheets="@css/button-style.css" prefWidth="150" minHeight="35" />
+        </HBox>
+
+    </VBox>
+
+</ScrollPane>

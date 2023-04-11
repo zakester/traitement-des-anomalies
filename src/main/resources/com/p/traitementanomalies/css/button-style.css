@@ -1,9 +1,11 @@
-#search-button-style {
+.button {
     -fx-background-color: #f1f1f1;
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
+    -fx-font-family: 'Inter Bold';
+    -fx-font-size: 15px;
 }
 
-#search-button-style: hover {
+.button: hover {
     -fx-background-color: #efefef;
 }

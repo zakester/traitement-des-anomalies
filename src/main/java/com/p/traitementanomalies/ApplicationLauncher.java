@@ -1,6 +1,5 @@
 package com.p.traitementanomalies;
 
-import com.p.traitementanomalies.Utility.ReadXSL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,7 +12,7 @@ import java.io.IOException;
 public class ApplicationLauncher extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationLauncher.class.getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationLauncher.class.getResource("first-ui-view.fxml"));
         loadFonts();
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setResizable(false);
