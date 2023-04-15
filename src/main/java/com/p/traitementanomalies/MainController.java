@@ -4,14 +4,18 @@ import com.jfoenix.controls.JFXListView;
 import com.p.traitementanomalies.DataHandler.SolutionHandler;
 import com.p.traitementanomalies.Models.Action;
 import com.p.traitementanomalies.Models.Solution;
+import com.p.traitementanomalies.Utility.Animation.UISwitcher;
 import com.p.traitementanomalies.Utility.ReadXSL;
 import com.p.traitementanomalies.Utility.SearchHandler;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import org.apache.commons.text.WordUtils;
 
@@ -22,6 +26,8 @@ public class MainController {
     private final SolutionHandler solutionHandler = new SolutionHandler();
 
     @FXML public Label title;
+    private ScrollPane uiSwitcher;
+    private FirstUiViewController firstUIController;
 
     @FXML public void initialize() {
 
@@ -118,4 +124,22 @@ public class MainController {
         updateActionLists(searchTextField.getText());
     }
 
+    public void setFirstUIController(FirstUiViewController firstUIController) {
+        this.firstUIController = firstUIController;
+    }
+
+    private Node firstUINode;
+    public void setFirstUINode(Node firstUINode) {
+        this.firstUINode = firstUINode;
+    }
+
+    public void back() {
+        this.uiSwitcher.setHbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+        this.uiSwitcher.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+        UISwitcher.switchWithFadeAnimation(this.uiSwitcher, this.firstUINode);
+    }
+
+    public void setUiSwitcher(ScrollPane uiSwitcher) {
+        this.uiSwitcher = uiSwitcher;
+    }
 }

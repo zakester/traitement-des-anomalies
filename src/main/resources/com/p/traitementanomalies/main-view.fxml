@@ -11,6 +11,7 @@
 <?import com.jfoenix.controls.JFXListView?>
 
 <?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import com.jfoenix.controls.JFXButton?>
 <VBox style="-fx-background-color: white;" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" minWidth="1280" minHeight="720" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.p.traitementanomalies.MainController">
 
     <padding>
@@ -50,6 +51,10 @@
             <JFXListView fx:id="actionPreventiveListView" stylesheets="@css/listview.css" minWidth="400" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
         </VBox>
 
+    </HBox>
+
+    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+        <JFXButton onAction="#back" text="Précédant" stylesheets="@css/button-style.css" prefWidth="150" minHeight="35" />
     </HBox>
 
 </VBox>

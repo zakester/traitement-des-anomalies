@@ -9,17 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8763b838-a11e-41d9-8184-c05b1244bfdd" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Traitement_des_Anomalies_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/FirstUiViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/css/scrollbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/first-ui-view.fxml" afterDir="false" />
+    <list default="true" id="8763b838-a11e-41d9-8184-c05b1244bfdd" name="Changes" comment="add second UI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/HolderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/Animation/PrebuiltAnimations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/Animation/UISwitcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/ApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/ApplicationLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/DataHandler/SolutionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/DataHandler/SolutionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/css/search-button-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/css/button-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/FirstUiViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/FirstUiViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/first-ui-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/first-ui-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680954479545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add second UI">
+      <created>1681246698191</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681246698191</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +151,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="add second UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="add second UI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
