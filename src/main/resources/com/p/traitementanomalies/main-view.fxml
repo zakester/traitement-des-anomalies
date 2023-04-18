@@ -12,7 +12,8 @@
 
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 <?import com.jfoenix.controls.JFXButton?>
-<VBox style="-fx-background-color: white;" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" minWidth="1280" minHeight="720" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.p.traitementanomalies.MainController">
+<VBox xmlns:fx="http://javafx.com/fxml" style="-fx-background-color: white;" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" minWidth="1280"
+      minHeight="720" spacing="20.0" fx:controller="com.p.traitementanomalies.MainController">
 
     <padding>
         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
@@ -29,9 +30,16 @@
                 <Insets left="15" right="15" />
             </padding>
         </TextField>
+
         <Button id="search-button-style" stylesheets="@css/button-style.css" fx:id="searchText" onAction="#search" minWidth="35" minHeight="35">
             <graphic>
                 <FontIcon iconColor="#878787" iconLiteral="gmi-search" iconSize="24" />
+            </graphic>
+        </Button>
+
+        <Button id="search-button-style" stylesheets="@css/button-style.css" fx:id="print" onAction="#print" minWidth="35" minHeight="35">
+            <graphic>
+                <FontIcon iconColor="#878787" iconLiteral="gmi-insert-drive-file" iconSize="24" />
             </graphic>
         </Button>
 

@@ -21,13 +21,14 @@
             <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
         </padding>
 
-        <HBox spacing="50">
-            <JFXTextField fx:id="nom" promptText="Nom" />
-            <JFXTextField fx:id="prenom" promptText="Prénom" />
+        <HBox spacing="57">
+            <JFXTextField prefWidth="175" fx:id="nom" promptText="Nom" />
+            <JFXTextField prefWidth="175" fx:id="prenom" promptText="Prénom" />
         </HBox>
 
-        <HBox spacing="50">
-            <JFXTextField fx:id="numberAnomalie" promptText="N° de la Anomalie" />
+        <HBox spacing="57">
+            <JFXTextField prefWidth="175" fx:id="numberAnomalie" promptText="N° de la Anomalie" />
+            <JFXTextField prefWidth="175" fx:id="numberLot" promptText="N° de Lot" />
         </HBox>
 
         <HBox spacing="50">
@@ -97,7 +98,6 @@
 
         </HBox>
 
-        <JFXTextField fx:id="numberLot" promptText="N° de Lot" />
         <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
 
             <padding>
@@ -205,7 +205,7 @@
 
                 <JFXRadioButton text="Pellicalage">
                     <toggleGroup>
-                        <fx:reference source="souType" />
+                        <fx:reference source="sc" />
                     </toggleGroup>
                 </JFXRadioButton>
 

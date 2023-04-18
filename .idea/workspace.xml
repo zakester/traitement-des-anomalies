@@ -9,13 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8763b838-a11e-41d9-8184-c05b1244bfdd" name="Changes" comment="add second UI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/HolderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/Animation/PrebuiltAnimations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/Animation/UISwitcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/main.fxml" afterDir="false" />
+    <list default="true" id="8763b838-a11e-41d9-8184-c05b1244bfdd" name="Changes" comment="Link 2 UI">
+      <change afterPath="$PROJECT_DIR$/.~lock.report.docx#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/[Content_Types].xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/_rels/.rels" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/docProps/app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/docProps/core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/docProps/custom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/word/_rels/document.xml.rels" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/word/document.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/word/fontTable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/word/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/docxModules/REPORT/word/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/model.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docx/original/REPORT/document.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Models/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/DOCXModifier/DOCXModifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/Utility/DOCXModifier/ToDOCX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/ApplicationLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/ApplicationLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/FirstUiViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/FirstUiViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/p/traitementanomalies/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/first-ui-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/p/traitementanomalies/first-ui-view.fxml" afterDir="false" />
@@ -42,13 +55,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O08iJXw7d0Zn0toY6Z2W46hTWK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -135,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681246698191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Link 2 UI">
+      <created>1681549823782</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681549823782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,9 +173,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
     <MESSAGE value="add second UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="add second UI" />
+    <MESSAGE value="Link 2 UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link 2 UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
