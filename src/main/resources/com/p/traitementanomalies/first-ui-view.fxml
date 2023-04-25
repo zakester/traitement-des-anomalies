@@ -246,7 +246,7 @@
                 </toggleGroup>
             </JFXRadioButton>
 
-            <JFXRadioButton text="Mazeure">
+            <JFXRadioButton text="Majeur">
                 <toggleGroup>
                     <fx:reference source="ng" />
                 </toggleGroup>
