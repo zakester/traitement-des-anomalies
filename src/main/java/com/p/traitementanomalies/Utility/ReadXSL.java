@@ -15,7 +15,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 public class ReadXSL {
-    private static final String PATH = "/home/zakester/Traitement des Anomalies/db.xlsx";
+    private static final String PATH = "db.xlsx";
     private SolutionHandler solutionHandler;
 
     public void readXSL() {

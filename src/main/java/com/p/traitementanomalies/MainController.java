@@ -22,7 +22,6 @@ import org.apache.commons.text.WordUtils;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class MainController {
     @FXML public TextField searchTextField;
