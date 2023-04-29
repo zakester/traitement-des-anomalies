@@ -29,8 +29,8 @@ public class DOCXModifier {
      * */
     public void replace(String fileOf) {
 
-        String pathXML = String.format("docx/docxModules/%s/word/document.xml", fileOf);
-        String tmpXMLPath = String.format("docx/docxModules/%s/word/tmp_document.xml", fileOf); // create temp XML file and modify it
+        String pathXML = String.format("C:/docx/docxModules/%s/word/document.xml", fileOf);
+        String tmpXMLPath = String.format("C:/docx/docxModules/%s/word/tmp_document.xml", fileOf); // create temp XML file and modify it
 
         try (BufferedReader br = new BufferedReader(new FileReader(pathXML)); BufferedWriter bw = new BufferedWriter(new FileWriter(tmpXMLPath))) {
             String line;

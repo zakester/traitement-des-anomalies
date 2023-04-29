@@ -30,7 +30,7 @@ public class ToDOCX {
      * */
     static public void zipFile(String folderOf, String zipFile, boolean excludeContainingFolder) throws IOException {
         ZipOutputStream zipOut = new ZipOutputStream(new FileOutputStream(zipFile));
-        String fileToZip = String.format("docx/docxModules/%s/", folderOf);
+        String fileToZip = String.format("C:/docx/docxModules/%s/", folderOf);
         File srcFile = new File(fileToZip);
 
         if(excludeContainingFolder && srcFile.isDirectory()) {
@@ -54,8 +54,8 @@ public class ToDOCX {
      * @param originalOf name of the document that we're working with
      */
     static private void copyOriginal(String originalOf) throws IOException {
-        String original_string = String.format("docx/original/%s/document.xml", originalOf);
-        String destination_string = String.format("docx/docxModules/%s/word/document.xml", originalOf);
+        String original_string = String.format("C:/docx/original/%s/document.xml", originalOf);
+        String destination_string = String.format("C:/docx/docxModules/%s/word/document.xml", originalOf);
 
         Path originalPath = Paths.get(original_string);
         Path destination = Paths.get(destination_string);

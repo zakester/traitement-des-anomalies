@@ -154,7 +154,7 @@ public class MainController {
         docxModifier.replace(REPORT_FOLDER_DOCX);
 
         try {
-            ToDOCX.zipFile(REPORT_FOLDER_DOCX, "report.docx", true);
+            ToDOCX.zipFile(REPORT_FOLDER_DOCX, "C:/report.docx", true);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
