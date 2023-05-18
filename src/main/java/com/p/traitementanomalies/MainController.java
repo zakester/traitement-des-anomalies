@@ -44,7 +44,7 @@ public class MainController {
 
         listViewCellFactorySetup();
 
-        searchTextField.textProperty().addListener((o, old, newValue) -> updateActionLists(newValue));
+        //searchTextField.textProperty().addListener((o, old, newValue) -> updateActionLists(newValue));
 
     }
 
